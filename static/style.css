@@ -1,0 +1,111 @@
+:root {
+    --border-color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    place-items: center;
+    background: linear-gradient(to left, #f2709c, #ff9472);
+}
+
+.graph-wrapper {
+    position: relative;
+}
+
+.inner {
+    background-color: transparent;
+    display: flex;
+    width: 600px;
+    height: 600px;
+    justify-content: space-between;
+    z-index: 3;
+    position: relative;
+    flex-direction: column-reverse;
+}
+
+.header {
+    margin-top: 150px;
+    margin-bottom: 100px;
+    position: relative;
+    font-size: 3.5rem;
+    padding: 20px;
+}
+
+.lines-container {
+    left: 80px;
+    top: 80px;
+    width: 440px;
+    height: 440px;
+    position: absolute;
+    display: flex;
+    z-index: 0;
+}
+
+.lines-top-left {
+    border-left: 10px solid var(--border-color);
+    border-top: 10px solid var(--border-color);
+    align-self: flex-end;
+}
+
+.lines-bottom-right {
+    border-right: 10px solid var(--border-color);
+    border-bottom: 10px solid var(--border-color);
+    align-self: flex-start;
+}
+
+.line {
+    border-radius: 40px;
+    width: 215px;
+    height: 215px;
+}
+
+.textbox {
+    align-self: center;
+    font-size: 2em;
+    margin: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.avatar {
+    margin: 10px;
+    height: 128px;
+    width: 128px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: solid 10px var(--border-color);
+    flex-shrink: 0;
+}
+
+.avatar img {
+    height: 100%;
+}
+
+.discord {
+    align-self: flex-start;
+    flex-direction: row-reverse;
+}
+
+.lastfm {
+    align-self: flex-end;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.bot {
+    align-self: center;
+}
+
+.profile-container {
+    display: flex;
+}

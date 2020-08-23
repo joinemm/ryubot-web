@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Connected</title>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+
+<body>
+    <div class="wrapper">
+        <h1 class="header">You're connected! You can now close this page.</h1>
+        <div class="graph-wrapper">
+            <div class="lines-container">
+                <div class="lines-top-left line"></div>
+                <div class="lines-bottom-right line"></div>
+            </div>
+            <div class="inner">
+                <div class="discord profile-container">
+                    <div class="textbox">{% block discord_name %}{% endblock discord_name %} <i class="fab fa-discord"></i></div>
+                    <div class="avatar discord-avatar">
+                        <img src="{% block discord_icon %}{% endblock discord_icon %}">
+                    </div>
+                </div>
+                <div class="bot profile-container">
+                    <div class="avatar bot-avatar">
+                        <img src="{% block bot_icon %}{% endblock bot_icon %}">
+                    </div>
+                </div>
+                <div class="lastfm profile-container">
+                    <div class="textbox"><i class="fab fa-lastfm-square"></i> {% block lastfm_name %}{% endblock lastfm_name %}</div>
+                    <div class="avatar lastfm-avatar">
+                        <img src="{% block lastfm_icon %}{% endblock lastfm_icon %}">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
